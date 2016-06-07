@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/back_from_person_score"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:src="@drawable/back"
+            />
+        <LinearLayout
+            android:id="@+id/person_score_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/search_score"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:text="查询成绩"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:padding="13dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            style="@style/wrap_layout" >
+            <!-- 上圆角-->
+            <LinearLayout style="@style/top_layout">
+                <TextView
+                    android:id="@+id/select_term"
+                    style="@style/usertext" android:text="学期" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line"/>
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout"
+                android:padding="10dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/text_clo"
+                    android:text="学号"
+                     />
+                <EditText
+                    android:id="@+id/score_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:numeric="integer"
+                    android:hint="请输入教务系统学号"
+                    android:layout_marginLeft="20dp"
+                    />
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/text_clo"
+                   android:text="密码" />
+                <EditText
+                    android:id="@+id/score_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:hint="请输入教务系统密码"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="查询"
+        />
+</LinearLayout>

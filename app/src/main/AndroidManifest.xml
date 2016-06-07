@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.classdesign">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+           >
+            </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="主页"
+            />
+        <activity
+            android:name=".mainFunctionModule.CheckAttendanceInfo"
+            android:screenOrientation="portrait"
+            android:label="考勤信息"
+            />
+        <activity
+            android:name=".mainFunctionModule.CheckOpenCourse"
+            android:screenOrientation="portrait"
+            android:label="查看开设课程"
+            />
+        <activity
+            android:name=".mainFunctionModule.CourseTable"
+            android:screenOrientation="portrait"
+            android:label="课程表"
+            />
+        <activity
+            android:name=".mainFunctionModule.DegreeExamEnrol"
+            android:screenOrientation="portrait"
+            android:label="等级考试报名"
+            />
+        <activity
+            android:name=".mainFunctionModule.ExamTimeTable"
+            android:screenOrientation="portrait"
+            android:label="考试时间表"
+            />
+        <activity
+            android:name=".mainFunctionModule.PersonInfo"
+            android:screenOrientation="portrait"
+            android:label="个人信息"
+            />
+        <activity
+            android:name=".mainFunctionModule.PersonScore"
+            android:screenOrientation="portrait"
+            android:label="个人成绩"
+            />
+        <activity
+            android:name=".mainFunctionModule.RewardRecord"
+            android:screenOrientation="portrait"
+            android:label="奖赏记录"
+            />
+        <activity
+            android:name=".mainFunctionModule.ViolationRecord"
+            android:screenOrientation="portrait"
+            android:label="违规记录"
+            />
+        <activity
+            android:name=".mainFunctionModule.PreviousCost"
+            android:screenOrientation="portrait"
+            android:label="预交费用"
+            />
+    </application>
+
+</manifest>
